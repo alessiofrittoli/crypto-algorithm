@@ -27,6 +27,18 @@
 	"files": [
 		"dist"
 	],
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js",
+			"typs": "./dist/index.d.ts"
+		},
+		"./types": {
+			"types": "./dist/types.d.ts",
+			"import": "./dist/types.mjs",
+			"require": "./dist/types.js"
+		}
+	},
 	"sideEffects": false,
 	"scripts": {
 		"build": "eslint && jest --ci --verbose && tsup",
