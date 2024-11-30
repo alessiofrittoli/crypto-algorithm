@@ -17,6 +17,9 @@ const config = [
 	...tseslintReccommended,
 	{ files: [ 'src/**/*.{js,mjs,cjs,ts}' ] },
 	{ ignores: [ 'dist' ] },
+	{ rules: {
+		'@typescript-eslint/no-namespace': 0
+	} }
 ]
 
 export default config
