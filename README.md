@@ -1,8 +1,8 @@
-# Node Module Starter 🛠️
+# Crypto Algorithm 📟
 
 Version 0.1.0
 
-## Starter repository for developing node_modules
+## Lightweight TypeScript library with Node.js Crypto Algortihm utilities
 
 ### Table of Contents
 
@@ -17,33 +17,43 @@ Version 0.1.0
 
 ### Getting started
 
-Run the following command to start using `node-module-starter` for your projects:
+Run the following command to start using `crypto-algorithm` in your projects:
 
 ```bash
-git clone git@github.com:alessiofrittoli/node-module-starter.git && git remote remove origin
+npm i @alessiofrittoli/crypto-algorithm
 ```
 
-install dependencies
+or using `pnpm`
+
+```bash
+pnpm i @alessiofrittoli/crypto-algorithm
+```
+
+---
+
+### Development
+
+#### Install depenendencies
+
+```bash
+npm install
+```
+
+or using `pnpm`
 
 ```bash
 pnpm i
 ```
 
-Read the [Creating a repository from a template - GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for more in-detail informations about creating a new Repository from a template using GitHub web interface.
+#### Build your source code
 
----
-
-### Build your source code
-
-Customize [tsup.config.ts](./tsup.config.ts) file and build your project
+Run the following command to build code for distribution.
 
 ```bash
 pnpm build
 ```
 
----
-
-### [ESLint](https://www.npmjs.com/package/eslint)
+#### [ESLint](https://www.npmjs.com/package/eslint)
 
 warnings / errors check.
 
@@ -51,7 +61,7 @@ warnings / errors check.
 pnpm lint
 ```
 
-### [Jest](https://npmjs.com/package/jest)
+#### [Jest](https://npmjs.com/package/jest)
 
 Run all the defined test suites by running the following:
 
