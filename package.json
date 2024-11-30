@@ -1,7 +1,7 @@
 {
-	"name": "@alessiofrittoli/node-module-starter",
+	"name": "@alessiofrittoli/crypto-algorithm",
 	"version": "0.1.0",
-	"description": "Basic Node Module repository",
+	"description": "Lightweight TypeScript library with Node.js Crypto Algortihm utilities",
 	"author": {
 		"name": "Alessio Frittoli",
 		"email": "info@alessiofrittoli.it",
@@ -10,18 +10,16 @@
 	"license": "MIT",
 	"keywords": [
 		"crypto",
-		"one-time-passwords",
-		"hmac-otp",
-		"time-otp"
+		"algorithms"
 	],
-	"homepage": "https://github.com/alessiofrittoli/node-module-starter#readme",
+	"homepage": "https://github.com/alessiofrittoli/crypto-algorithm#readme",
 	"bugs": {
-		"url": "https://github.com/alessiofrittoli/node-module-starter/issues",
+		"url": "https://github.com/alessiofrittoli/crypto-algorithm/issues",
 		"email": "info@alessiofrittoli.it"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/alessiofrittoli/node-module-starter.git"
+		"url": "git+https://github.com/alessiofrittoli/crypto-algorithm.git"
 	},
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
