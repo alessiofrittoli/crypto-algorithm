@@ -1,4 +1,4 @@
-import type Alg from './types'
+import type Algo from './types'
 
 class Algorithm
 {
@@ -10,14 +10,14 @@ class Algorithm
 
 
 	/**
-	 * Algorithms Map indexed by {@link Alg.Id}. For HMAC algorithms `'HS256' | 'HS384'| 'HS512'` is used.
+	 * Algorithms Map indexed by {@link Algo.Id}. For HMAC algorithms `'HS256' | 'HS384'| 'HS512'` is used.
 	 * 
 	 * Formats match specific requirements.
 	 * @link https://developer.mozilla.org/en-US/docs/Web/API/EcKeyImportParams#namedcurve
 	 * 
 	 * @link [COSE Algorithms](https://www.iana.org/assignments/cose/cose.xhtml#algorithms)
 	 */
-	static MAP = new Map<Alg.Id, Alg.Schema>( [
+	static MAP = new Map<Algo.Id, Algo.Schema>( [
 		[ -7, {
 			kty				: Algorithm.KTY.EC2,
 			alg				: -7,
@@ -175,7 +175,7 @@ class Algorithm
 	] )
 
 
-	static by( scheme: Partial<Alg.Schema> | KeyAlgorithm )
+	static by( scheme: Partial<Algo.Schema> | KeyAlgorithm )
 	{
 		if ( 'alg' in scheme && scheme.alg ) return Algorithm.MAP.get( scheme.alg )
 		
@@ -187,7 +187,7 @@ class Algorithm
 						if ( ! found ) continue
 						found = (
 							key in scheme
-							&& scheme[ key as keyof typeof scheme ] === entry[ 1 ][ key as keyof Alg.Schema ]
+							&& scheme[ key as keyof typeof scheme ] === entry[ 1 ][ key as keyof Algo.Schema ]
 						)
 					}
 					return found
@@ -197,7 +197,7 @@ class Algorithm
 	}
 
 
-	static byId( alg: Alg.Id )
+	static byId( alg: Algo.Id )
 	{
 		return Algorithm.by( { alg } )
 	}

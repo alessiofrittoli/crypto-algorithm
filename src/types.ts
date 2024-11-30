@@ -1,4 +1,4 @@
-namespace Algorithm
+namespace Algo
 {
 	export namespace HMAC
 	{
@@ -21,11 +21,11 @@ namespace Algorithm
 
 		export interface Schema extends KeyAlgorithm
 		{
-			alg				: Algorithm.HMAC.Id
-			name			: Algorithm.HMAC.Name
-			hash			: Algorithm.Hash
-			webcryptoName	: Algorithm.HMAC.WebcryptoName
-			jwkAlg			: Algorithm.HMAC.JwkName
+			alg				: Algo.HMAC.Id
+			name			: Algo.HMAC.Name
+			hash			: Algo.Hash
+			webcryptoName	: Algo.HMAC.WebcryptoName
+			jwkAlg			: Algo.HMAC.JwkName
 		}
 	}
 
@@ -53,12 +53,12 @@ namespace Algorithm
 
 		export interface Schema extends KeyAlgorithm
 		{
-			kty				: Algorithm.KTY.RSA
-			alg				: Algorithm.RSA.Id
-			name			: Algorithm.RSA.Name
-			hash			: Algorithm.Hash
-			webcryptoName	: Algorithm.RSA.WebcryptoName
-			jwkAlg			: Algorithm.RSA.JwkName
+			kty				: Algo.KTY.RSA
+			alg				: Algo.RSA.Id
+			name			: Algo.RSA.Name
+			hash			: Algo.Hash
+			webcryptoName	: Algo.RSA.WebcryptoName
+			jwkAlg			: Algo.RSA.JwkName
 		}
 	}
 	
@@ -83,12 +83,12 @@ namespace Algorithm
 
 		export interface Schema extends KeyAlgorithm
 		{
-			kty				: Algorithm.KTY.RSA
-			alg				: Algorithm.RSAPss.Id
-			name			: Algorithm.RSAPss.Name
-			hash			: Algorithm.DefaultHash
-			webcryptoName	: Algorithm.RSAPss.WebcryptoName
-			jwkAlg			: Algorithm.RSAPss.JwkName
+			kty				: Algo.KTY.RSA
+			alg				: Algo.RSAPss.Id
+			name			: Algo.RSAPss.Name
+			hash			: Algo.DefaultHash
+			webcryptoName	: Algo.RSAPss.WebcryptoName
+			jwkAlg			: Algo.RSAPss.JwkName
 		}
 	}
 
@@ -111,15 +111,15 @@ namespace Algorithm
 
 		export interface Schema extends EcKeyAlgorithm
 		{
-			kty				: Algorithm.KTY.EC2
-			alg				: Algorithm.ECDSA.Id
-			crv				: Algorithm.Curve.Id
-			crvSchemeName	: Algorithm.Curve.SchemeName
-			namedCurve		: Algorithm.Curve.Name
-			name			: Algorithm.ECDSA.Name
-			hash			: Algorithm.DefaultHash
-			webcryptoName	: Algorithm.ECDSA.WebcryptoName
-			jwkAlg			: Algorithm.ECDSA.JwkName
+			kty				: Algo.KTY.EC2
+			alg				: Algo.ECDSA.Id
+			crv				: Algo.Curve.Id
+			crvSchemeName	: Algo.Curve.SchemeName
+			namedCurve		: Algo.Curve.Name
+			name			: Algo.ECDSA.Name
+			hash			: Algo.DefaultHash
+			webcryptoName	: Algo.ECDSA.WebcryptoName
+			jwkAlg			: Algo.ECDSA.JwkName
 		}
 	}
 
@@ -135,13 +135,13 @@ namespace Algorithm
 
 		export interface Schema extends KeyAlgorithm
 		{
-			kty				: Algorithm.KTY.EC2
-			alg				: Algorithm.EdDSA.Id
-			crv				: Algorithm.Curve.Id
-			name			: Algorithm.EdDSA.Name
-			hash			: Algorithm.DefaultHash
-			webcryptoName	: Algorithm.EdDSA.WebcryptoName
-			jwkAlg			: Algorithm.EdDSA.JwkName
+			kty				: Algo.KTY.EC2
+			alg				: Algo.EdDSA.Id
+			crv				: Algo.Curve.Id
+			name			: Algo.EdDSA.Name
+			hash			: Algo.DefaultHash
+			webcryptoName	: Algo.EdDSA.WebcryptoName
+			jwkAlg			: Algo.EdDSA.JwkName
 		}
 	}
 
@@ -167,11 +167,11 @@ namespace Algorithm
 
 		export interface Schema extends KeyAlgorithm
 		{
-			alg				: Algorithm.DSA.Id
-			name			: Algorithm.DSA.Name
-			hash			: Algorithm.Hash
-			webcryptoName	: Algorithm.DSA.WebcryptoName
-			jwkAlg			: Algorithm.DSA.JwkName
+			alg				: Algo.DSA.Id
+			name			: Algo.DSA.Name
+			hash			: Algo.Hash
+			webcryptoName	: Algo.DSA.WebcryptoName
+			jwkAlg			: Algo.DSA.JwkName
 		}
 	}
 
@@ -181,12 +181,12 @@ namespace Algorithm
 	 * 
 	 */
 	export type Name = (
-		| Algorithm.HMAC.Name
-		| Algorithm.RSA.Name
-		| Algorithm.RSAPss.Name
-		| Algorithm.ECDSA.Name
-		| Algorithm.EdDSA.Name
-		| Algorithm.DSA.Name
+		| Algo.HMAC.Name
+		| Algo.RSA.Name
+		| Algo.RSAPss.Name
+		| Algo.ECDSA.Name
+		| Algo.EdDSA.Name
+		| Algo.DSA.Name
 	)
 
 	
@@ -196,12 +196,12 @@ namespace Algorithm
 	 * @link https://datatracker.ietf.org/doc/html/rfc7518#section-3.1
 	 */
 	export type JwkName = (
-		| Algorithm.HMAC.JwkName
-		| Algorithm.RSA.JwkName
-		| Algorithm.RSAPss.JwkName
-		| Algorithm.ECDSA.JwkName
-		| Algorithm.EdDSA.JwkName
-		| Algorithm.DSA.JwkName
+		| Algo.HMAC.JwkName
+		| Algo.RSA.JwkName
+		| Algo.RSAPss.JwkName
+		| Algo.ECDSA.JwkName
+		| Algo.EdDSA.JwkName
+		| Algo.DSA.JwkName
 	)
 
 	export type OtherHash = (
@@ -259,7 +259,7 @@ namespace Algorithm
 		| 'ssl3-sha1'
 	)
 	export type DefaultHash	= 'SHA-256' | 'SHA-384' | 'SHA-512'
-	export type Hash		= Algorithm.DefaultHash | Algorithm.RSA.Hash
+	export type Hash		= Algo.DefaultHash | Algo.RSA.Hash
 
 
 	export enum KTY
@@ -270,19 +270,19 @@ namespace Algorithm
 	}
 
 	export type StandardId = (
-		| Algorithm.RSA.Id
-		| Algorithm.RSAPss.Id
-		| Algorithm.ECDSA.Id
-		| Algorithm.EdDSA.Id
+		| Algo.RSA.Id
+		| Algo.RSAPss.Id
+		| Algo.ECDSA.Id
+		| Algo.EdDSA.Id
 	)
 	export type NonIANAId = (
-		| Algorithm.DSA.Id
+		| Algo.DSA.Id
 	)
 	/** Algorithm Identifier. */
 	export type Id = (
-		| Algorithm.HMAC.Id
-		| Algorithm.StandardId
-		| Algorithm.NonIANAId
+		| Algo.HMAC.Id
+		| Algo.StandardId
+		| Algo.NonIANAId
 	)
 	
 	
@@ -295,22 +295,22 @@ namespace Algorithm
 	
 	
 	export type WebcryptoName = (
-		| Algorithm.HMAC.WebcryptoName
-		| Algorithm.RSA.WebcryptoName
-		| Algorithm.RSAPss.WebcryptoName
-		| Algorithm.ECDSA.WebcryptoName
-		| Algorithm.EdDSA.WebcryptoName
-		| Algorithm.DSA.WebcryptoName
+		| Algo.HMAC.WebcryptoName
+		| Algo.RSA.WebcryptoName
+		| Algo.RSAPss.WebcryptoName
+		| Algo.ECDSA.WebcryptoName
+		| Algo.EdDSA.WebcryptoName
+		| Algo.DSA.WebcryptoName
 	)
 
 	export type Schema = (
-		| Algorithm.HMAC.Schema
-		| Algorithm.RSA.Schema
-		| Algorithm.RSAPss.Schema
-		| Algorithm.ECDSA.Schema
-		| Algorithm.EdDSA.Schema
-		| Algorithm.DSA.Schema
+		| Algo.HMAC.Schema
+		| Algo.RSA.Schema
+		| Algo.RSAPss.Schema
+		| Algo.ECDSA.Schema
+		| Algo.EdDSA.Schema
+		| Algo.DSA.Schema
 	)
 }
 
-export default Algorithm
+export default Algo
