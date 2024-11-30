@@ -45,7 +45,8 @@
 		"lint": "eslint",
 		"test": "jest --watchAll --verbose",
 		"test:ci": "jest --ci --verbose",
-		"test:jest": "pnpm test jext.test.ts"
+		"test:jest": "pnpm test jest.test.ts",
+		"test:algorithm": "pnpm test algorithm.test.ts"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.16.0",
