@@ -1,6 +1,6 @@
 {
 	"name": "@alessiofrittoli/crypto-algorithm",
-	"version": "0.1.0-alpha.1",
+	"version": "0.1.0-alpha.2",
 	"description": "Lightweight TypeScript library with Node.js Crypto Algortihm utilities",
 	"author": {
 		"name": "Alessio Frittoli",
@@ -30,8 +30,7 @@
 	"exports": {
 		".": {
 			"import": "./dist/index.mjs",
-			"require": "./dist/index.js",
-			"typs": "./dist/index.d.ts"
+			"require": "./dist/index.js"
 		},
 		"./types": {
 			"types": "./dist/types.d.ts",
