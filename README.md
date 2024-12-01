@@ -1,15 +1,13 @@
 # Crypto Algorithm 📟
 
-Version 1.1.0
+Version 1.2.0
 
 ## Lightweight TypeScript library with Node.js Crypto Algortihm utilities
 
 ### Table of Contents
 
 - [Getting started](#getting-started)
-- [ESLint](#eslint)
-- [Jest](#jest)
-- [Contributing](#contributing)
+- [Algorithm utility Class](#algorithm-utility-class)
 - [Security](#security)
 - [Credits](#made-with-)
 
@@ -143,7 +141,7 @@ Refer to the [Algorithm.MAP](#algorithmmap) implementation for specific algorith
 
 ---
 
-### Development
+<!-- ### Development
 
 #### Install depenendencies
 
@@ -198,7 +196,7 @@ pnpm test:jest
 Contributions are truly welcome!\
 Please refer to the [Contributing Doc](./CONTRIBUTING.md) for more information on how to start contributing to this project.
 
----
+--- -->
 
 ### Security
 
