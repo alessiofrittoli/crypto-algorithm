@@ -1,6 +1,6 @@
-import type Algo from './types'
+import type { Algo } from './types'
 
-class Algorithm
+export class Algorithm
 {
 	static KTY = {
 		OKP: 1,
@@ -202,5 +202,3 @@ class Algorithm
 		return Algorithm.by( { alg } )
 	}
 }
-
-export default Algorithm

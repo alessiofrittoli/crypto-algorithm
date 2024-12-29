@@ -1,4 +1,4 @@
-namespace Algo
+export namespace Algo
 {
 	export namespace HMAC
 	{
@@ -312,5 +312,3 @@ namespace Algo
 		| Algo.DSA.Schema
 	)
 }
-
-export default Algo
