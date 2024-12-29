@@ -1,6 +1,6 @@
 # Crypto Algorithm 📟
 
-Version 1.2.0
+Version 2.0.0
 
 ## Lightweight TypeScript library with Node.js Crypto Algortihm utilities
 
