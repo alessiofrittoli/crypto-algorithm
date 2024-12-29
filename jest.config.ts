@@ -16,6 +16,7 @@ dotenv.config( { path: [
  * 
  */
 const config: JestConfigWithTsJest = {
+	/** https://jestjs.io/docs/configuration#testenvironment-string */
 	testEnvironment: 'node',
 	moduleDirectories: [ 'node_modules', '<rootDir>/' ],
 	/**
