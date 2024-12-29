@@ -1,4 +1,4 @@
-import Algorithm from '../src'
+import { Algorithm } from '../src'
 
 describe( 'Algorithm.by', () => {
 

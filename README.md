@@ -107,7 +107,7 @@ Retrieves an algorithm schema by its identifier.
 #### Retrieve Schema by Algorithm ID
 
 ```ts
-import Algorithm from '@alessiofrittoli/crypto-algorithm'
+import { Algorithm } from '@alessiofrittoli/crypto-algorithm'
 
 const schema = Algorithm.byId( -7 )
 console.log( schema )
@@ -117,8 +117,8 @@ console.log( schema )
 #### Retrieve Schema by Partial Properties
 
 ```ts
-import Algorithm from '@alessiofrittoli/crypto-algorithm'
-import type Algo from '@alessiofrittoli/crypto-algorithm/types'
+import { Algorithm } from '@alessiofrittoli/crypto-algorithm'
+import type { Algo } from '@alessiofrittoli/crypto-algorithm/types'
 
 const partialScheme: Partial<Algo.Schema> = { name: 'RSA-PSS', hash: 'SHA-256' }
 const schema = Algorithm.by( partialScheme )
