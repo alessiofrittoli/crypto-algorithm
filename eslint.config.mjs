@@ -16,9 +16,9 @@ const config = [
 	pluginJs.configs.recommended,
 	...tseslintReccommended,
 	{ files: [ 'src/**/*.{js,mjs,cjs,ts}' ] },
-	{ ignores: [ 'dist' ] },
+	{ ignores: [ 'dist', 'scripts', 'coverage' ] },
 	{ rules: {
-		'@typescript-eslint/no-namespace': 0
+		'@typescript-eslint/no-namespace': 'off'
 	} }
 ]
 
