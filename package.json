@@ -69,7 +69,7 @@
 		"//4b": "************************ TARGETED UNIT TESTS ************************",
 		"//4c": "*********************************************************************",
 		"test:jest": "pnpm test:watch jest.test.ts",
-		"test:algorithm": "pnpm test algorithm.test.ts"
+		"test:algorithm": "pnpm test:watch algorithm.test.ts"
 	},
 	"devDependencies": {
 		"@alessiofrittoli/node-scripts": "^2.3.1",
