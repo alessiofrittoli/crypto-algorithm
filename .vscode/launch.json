@@ -2,7 +2,7 @@
 	"configurations": [
 		{
 			"type": "node",
-			"name": "vscode-jest-tests.v2.node-scripts",
+			"name": "vscode-jest-tests.v2.crypto-algorithm",
 			"request": "launch",
 			"args": [
 				"test",

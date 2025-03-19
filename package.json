@@ -8,6 +8,12 @@
 		"url": "https://alessiofrittoli.it"
 	},
 	"license": "MIT",
+	"funding": [
+		{
+			"type": "github",
+			"url": "https://github.com/sponsors/alessiofrittoli"
+		}
+	],
 	"keywords": [
 		"crypto",
 		"algorithms"
@@ -39,18 +45,30 @@
 	},
 	"sideEffects": false,
 	"scripts": {
+		"//1a": "*********************************************************************",
+		"//1b": "*********************** BUILD - LINT - RELEASE **********************",
+		"//1c": "*********************************************************************",
 		"build": "pnpm lint && pnpm test:ci && tsup",
 		"build:watch": "tsup --watch",
 		"lint": "eslint",
 		"release": "node scripts/publish.js --verbose --npm",
-		"test": "pnpm test:watch",
+		"//2a": "*********************************************************************",
+		"//2b": "***************************** UNIT TESTS ****************************",
+		"//2c": "*********************************************************************",
+		"test": "jest --verbose",
 		"test:watch": "jest --watchAll --verbose",
 		"test:ci": "jest --ci --verbose",
+		"//3a": "*********************************************************************",
+		"//3b": "************************ UNIT TESTS COVERAGE ************************",
+		"//3c": "*********************************************************************",
 		"test:coverage": "pnpm test:watch --coverage",
 		"test:ci:coverage": "pnpm test:ci --coverage",
 		"test:serve-coverage": "http-server ./coverage/lcov-report --gzip true -p 0 -o --silent",
 		"test:coverage:serve": "concurrently --prefix none --kill-others \"pnpm test:coverage\" \"pnpm test:serve-coverage\"",
-		"test:jest": "pnpm test jest.test.ts",
+		"//4a": "*********************************************************************",
+		"//4b": "************************ TARGETED UNIT TESTS ************************",
+		"//4c": "*********************************************************************",
+		"test:jest": "pnpm test:watch jest.test.ts",
 		"test:algorithm": "pnpm test algorithm.test.ts"
 	},
 	"devDependencies": {
