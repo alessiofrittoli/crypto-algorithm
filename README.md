@@ -1,35 +1,59 @@
-# Crypto Algorithm 📟
-
-[![NPM Latest Version][version-badge]][npm-url] [![Coverage Status][coverage-badge]][coverage-url] [![Socket Status][socket-badge]][socket-url] [![NPM Monthly Downloads][downloads-badge]][npm-url] [![Dependencies][deps-badge]][deps-url]
-
-[![GitHub Sponsor][sponsor-badge]][sponsor-url]
-
-[version-badge]: https://img.shields.io/npm/v/%40alessiofrittoli%2Fcrypto-algorithm
-[npm-url]: https://npmjs.org/package/%40alessiofrittoli%2Fcrypto-algorithm
-[coverage-badge]: https://coveralls.io/repos/github/alessiofrittoli/crypto-algorithm/badge.svg
-[coverage-url]: https://coveralls.io/github/alessiofrittoli/crypto-algorithm
-[socket-badge]: https://socket.dev/api/badge/npm/package/@alessiofrittoli/crypto-algorithm
-[socket-url]: https://socket.dev/npm/package/@alessiofrittoli/crypto-algorithm/overview
-[downloads-badge]: https://img.shields.io/npm/dm/%40alessiofrittoli%2Fcrypto-algorithm.svg
-[deps-badge]: https://img.shields.io/librariesio/release/npm/%40alessiofrittoli%2Fcrypto-algorithm
-[deps-url]: https://libraries.io/npm/%40alessiofrittoli%2Fcrypto-algorithm
+<h1 align="center">Crypto Algorithm 📟</h1>
+<p align="center">
+  Lightweight TypeScript library with Node.js Crypto Algortihm utilities
+</p>
+<p align="center">
+  <a href="https://npmjs.org/package/@alessiofrittoli/crypto-algorithm">
+    <img src="https://img.shields.io/npm/v/@alessiofrittoli/crypto-algorithm" alt="Latest version"/>
+  </a>
+  <a href="https://coveralls.io/github/alessiofrittoli/crypto-algorithm">
+    <img src="https://coveralls.io/repos/github/alessiofrittoli/crypto-algorithm/badge.svg" alt="Test coverage"/>
+  </a>
+  <a href="https://socket.dev/npm/package/@alessiofrittoli/crypto-algorithm/overview">
+    <img src="https://socket.dev/api/badge/npm/package/@alessiofrittoli/crypto-algorithm" alt="Socket Security score"/>
+  </a>
+  <a href="https://npmjs.org/package/@alessiofrittoli/crypto-algorithm">
+    <img src="https://img.shields.io/npm/dm/@alessiofrittoli/crypto-algorithm.svg" alt="npm downloads"/>
+  </a>
+  <a href="https://bundlephobia.com/package/@alessiofrittoli/crypto-algorithm">
+    <img src="https://badgen.net/bundlephobia/dependency-count/@alessiofrittoli/crypto-algorithm" alt="Dependencies"/>
+  </a>
+  <a href="https://libraries.io/npm/%40alessiofrittoli%2Fcrypto-algorithm">
+    <img src="https://img.shields.io/librariesio/release/npm/@alessiofrittoli/crypto-algorithm" alt="Dependencies status"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://bundlephobia.com/package/@alessiofrittoli/crypto-algorithm">
+    <img src="https://badgen.net/bundlephobia/min/@alessiofrittoli/crypto-algorithm" alt="minified"/>
+  </a>
+  <a href="https://bundlephobia.com/package/@alessiofrittoli/crypto-algorithm">
+    <img src="https://badgen.net/bundlephobia/minzip/@alessiofrittoli/crypto-algorithm" alt="minizipped"/>
+  </a>
+  <a href="https://bundlephobia.com/package/@alessiofrittoli/crypto-algorithm">
+    <img src="https://badgen.net/bundlephobia/tree-shaking/@alessiofrittoli/crypto-algorithm" alt="Tree shakable"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/sponsors/alessiofrittoli">
+    <img src="https://img.shields.io/static/v1?label=Fund%20this%20package&message=%E2%9D%A4&logo=GitHub&color=%23DB61A2" alt="Fund this package"/>
+  </a>
+</p>
 
 [sponsor-badge]: https://img.shields.io/static/v1?label=Fund%20this%20package&message=%E2%9D%A4&logo=GitHub&color=%23DB61A2
 [sponsor-url]: https://github.com/sponsors/alessiofrittoli
 
-## Lightweight TypeScript library with Node.js Crypto Algortihm utilities
-
 ### Table of Contents
 
 - [Getting started](#getting-started)
-- [Algorithm utility Class](#algorithm-utility-class)
 - [Development](#development)
-  - [Install depenendencies](#install-depenendencies)
-  - [Build the source code](#build-the-source-code)
-  - [ESLint](#eslint)
-  - [Jest](#jest)
-- [Contributing](#contributing)
-- [Security](#security)
+  - [Local development](#local-development)
+  - [Production build](#production-build)
+  - [Unit tests](#unit-tests)
+    - [Run tests with coverage](#run-tests-with-coverage)
+  - [Contributing](#contributing)
+  - [Security](#security)
+- [API Reference](#api-reference)
+  - [Algorithm utility Class](#algorithm-utility-class)
 - [Credits](#made-with-)
 
 ---
@@ -50,6 +74,86 @@ pnpm i @alessiofrittoli/crypto-algorithm
 
 ---
 
+### Development
+
+Run the following to start development
+
+```shell
+nvm use
+
+pnpm i
+```
+
+#### Local development
+
+Run the following
+
+```shell
+pnpm dev
+```
+
+This will generate unminified output code, sourcemaps and will enable source file watcher.
+
+---
+
+#### Production build
+
+Run the following to create a local production build
+
+```shell
+pnpm build
+```
+
+This will generate minified output code without sourcemaps.
+
+---
+
+#### Unit tests
+
+Run all the defined test suites by running the following:
+
+```shell
+# Run tests and watch file changes.
+pnpm test:watch
+
+# Run tests in a CI environment.
+pnpm test:ci
+```
+
+---
+
+##### Run tests with coverage
+
+An HTTP server is then started to serve coverage files from `./coverage` folder.
+
+⚠️ You may see a blank page the first time you run this command. Simply refresh the browser to see the updates.
+
+```shell
+pnpm test:coverage:serve
+```
+
+---
+
+#### Contributing
+
+Contributions are truly welcome!
+
+Please refer to the [Contributing Doc](./CONTRIBUTING.md) for more information on how to start contributing to this project.
+
+Help keep this project up to date with [GitHub Sponsor][sponsor-url].
+
+[![GitHub Sponsor][sponsor-badge]][sponsor-url]
+
+---
+
+#### Security
+
+If you believe you have found a security vulnerability, we encourage you to **_responsibly disclose this and NOT open a public issue_**. We will investigate all legitimate reports. Email `security@alessiofrittoli.it` to disclose any security vulnerabilities.
+
+---
+
+### API Reference
+
 ### Algorithm utility Class
 
 The `Algorithm` class is designed to manage cryptographic algorithm schemas, including their mappings and retrievals based on various criteria.
@@ -67,7 +171,7 @@ The algorithms supported by this class conform to [COSE Algorithms](https://iana
 A map of key type constants. The supported key types are:
 
 | Key   | Value | Description        |
-|-------|-------|--------------------|
+| ----- | ----- | ------------------ |
 | `OKP` | `1`   | Octet Key Pair     |
 | `EC2` | `2`   | Elliptic Curve (2) |
 | `RSA` | `3`   | RSA                |
@@ -130,20 +234,23 @@ Retrieves an algorithm schema by its identifier.
 ```ts
 import { Algorithm } from '@alessiofrittoli/crypto-algorithm'
 
-const schema = Algorithm.byId( -7 )
-console.log( schema )
+const schema = Algorithm.byId(-7)
+console.log(schema)
 // Output: Schema details for ECDSA using SHA-256
 ```
 
 #### Retrieve Schema by Partial Properties
 
 ```ts
-import { Algorithm } from '@alessiofrittoli/crypto-algorithm'
 import type { Algo } from '@alessiofrittoli/crypto-algorithm/types'
+import { Algorithm } from '@alessiofrittoli/crypto-algorithm'
 
-const partialScheme: Partial<Algo.Schema> = { name: 'RSA-PSS', hash: 'SHA-256' }
-const schema = Algorithm.by( partialScheme )
-console.log( schema )
+const partialScheme: Partial<Algo.Schema> = {
+  name: 'RSA-PSS',
+  hash: 'SHA-256',
+}
+const schema = Algorithm.by(partialScheme)
+console.log(schema)
 // Output: Schema details for RSA-PSS with SHA-256
 ```
 
@@ -161,78 +268,6 @@ The `Algorithm.MAP` includes schemas for:
 Refer to the [Algorithm.MAP](#algorithmmap) implementation for specific algorithm configurations.
 
 ---
-
-### Development
-
-#### Install depenendencies
-
-```bash
-npm install
-```
-
-or using `pnpm`
-
-```bash
-pnpm i
-```
-
-#### Build the source code
-
-Run the following command to test and build code for distribution.
-
-```bash
-pnpm build
-```
-
-#### [ESLint](https://www.npmjs.com/package/eslint)
-
-warnings / errors check.
-
-```bash
-pnpm lint
-```
-
-#### [Jest](https://npmjs.com/package/jest)
-
-Run all the defined test suites by running the following:
-
-```bash
-# Run tests and watch file changes.
-pnpm test:watch
-
-# Run tests in a CI environment.
-pnpm test:ci
-```
-
-- See [`package.json`](./package.json) file scripts for more info.
-
-Run tests with coverage.
-
-An HTTP server is then started to serve coverage files from `./coverage` folder.
-
-⚠️ You may see a blank page the first time you run this command. Simply refresh the browser to see the updates.
-
-```bash
-test:coverage:serve
-```
-
----
-
-### Contributing
-
-Contributions are truly welcome!
-
-Please refer to the [Contributing Doc](./CONTRIBUTING.md) for more information on how to start contributing to this project.
-
-Help keep this project up to date with [GitHub Sponsor][sponsor-url].
-
-[![GitHub Sponsor][sponsor-badge]][sponsor-url]
-
----
-
-### Security
-
-If you believe you have found a security vulnerability, we encourage you to **_responsibly disclose this and NOT open a public issue_**. We will investigate all legitimate reports. Email `security@alessiofrittoli.it` to disclose any security vulnerabilities.
 
 ### Made with ☕
 
